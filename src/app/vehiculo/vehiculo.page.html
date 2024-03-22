@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Vehiculo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <img 
+      src="../../assets/images/parcking.jpg" 
+      style="
+        display: block; 
+        width: 50%; 
+        height: auto; 
+        margin-left: auto; 
+        margin-right: auto;"
+      >
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Placa</ion-label>
+    <ion-input type="text" [(ngModel)]="txt_placa"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Modelo</ion-label>
+    <ion-input type="text" [(ngModel)]="txt_modelo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Color</ion-label>
+    <ion-input type="text" [(ngModel)]="txt_color"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Hora de entrada</ion-label>
+    <ion-input type="text" [(ngModel)]="txt_horaentrada"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Hora de salida</ion-label>
+    <ion-input type="text" [(ngModel)]="txt_horasalida"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="Actualizar()">Realizar Cambios</ion-button>
+</ion-content>
+
